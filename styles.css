@@ -1,0 +1,12 @@
+[data-fake="correct"]{
+		background-color: var(--green) !important;
+}
+[data-fake="present"]{
+		background-color: var(--yellow) !important;
+}
+[data-fake="absent"]{
+		background-color: var(--color-tone-2) !important;
+}
+[data-fake="tbd"],[data-fake="empty"]{
+		background-color: white !important;
+}

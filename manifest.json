@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+ 
+  "name": "Word Mongus",
+  "version": "0.1.0",
+  "description": "It's Wordle, but certain letters will be colored wrong. These impostor letters are all part of a seperate random 5-letter word, and if the letter was originally grey - absent in the real word, it will be recolored yellow or green depending on its location in the random 5-letter word; and vice versa: if the letter was originally yellow or green, it will disguise its color as grey. The red bullet shapes on the right counts the number of impostors in that row's word. If there is no bullet, there are no impostors. It's simple, really.",
+ 
+  "content_scripts": [{
+    "js": ["content.js"],
+	"css": ["styles.css"],
+    "matches": ["<all_urls>"]
+  }],
+   
+   "web_accessible_resources": [
+	  {
+		"resources": ["wordlist.json"],
+		"matches": ["<all_urls>"]
+	  }
+   ],
+   
+   "icons": { 
+	"192": "icon192.png"
+  }
+}
